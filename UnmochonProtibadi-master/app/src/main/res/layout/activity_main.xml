@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="উন্মোচন অ্যাপ ব্যবহার করার জন্য আপনাকে ধন্যবাদ । তাৎক্ষনিক স্ক্রিনশট নেয়ার জন্য এবং তা আমাদের কাছে পাঠানোর জন্য উন্মোচন বাটন এনাবল করুন।"
+                android:padding="16dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/notify_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_border_focus_layout"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="এক্টিভ উন্মোচন" />
+
+
+            <TextView
+                android:id="@+id/know_unmo_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:text="উন্মোচন অ্যাপ কিভাবে ব্যবহার করবেন? জানতে ক্লিক করুন এখানে ।"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_details"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:text="উন্মোচন এন্ড্রয়েড অ্যাপ ব্যবহার করতে এক্টিভ উন্মোচন এ ক্লিক করুন। এক্টিভ করার পর আপনি আপনার মোবাইল স্ক্রিন এ তিনটি বাটন দেখতে পাবেন। ক্রস বাটন ক্লিক করলে উন্মোচন ডিএক্টিভ হয়ে যাবে তা এনাবল করতে আবার উন্মোচন অ্যাপ খুলুন এবং এক্টিভ উন্মোচন এ ক্লিক করুন। ক্রস বাটনের পরের বাটন টি ক্লিক করলে আপনি স্ক্রিনশট নিতে পারবেন। স্ক্রিনশট নেবার সময় বাটন গুলো দেখতে পাবেন না , ২ সেকেন্ড অপেক্ষা করুন এবং বাটন গুলো দেখতে পাবেন। স্ক্রিনশট বাটনের পরের বাটনটিতে ক্লিক করলে আপনি স্ক্রিনশট ইমেজটি এডিট করতে পারবেন।এডিট বাটনের পরের বাটন টি ক্লিক করলে ডিরেক্ট স্ক্রিনশট আমাদের কাছে চলে আসবে। আরো প্রশ্ন থাকলে আমাদের ফেইসবুক পেজ ভিজিট করুন। "/>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

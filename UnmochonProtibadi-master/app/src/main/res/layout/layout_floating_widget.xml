@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Root container-->
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!--View while view is collapsed-->
+        <LinearLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <!--Close button-->
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/outline_clear_black_36"
+                tools:ignore="ContentDescription"/>
+
+            <!--Icon of floating widget -->
+            <ImageView
+                android:id="@+id/collapsed_screenshot_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/screenshoticon"
+                android:background="#ffffff"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/collapsedactivity_button"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/baseline_edit_black_36"
+                android:background="#ffffff"
+                tools:ignore="ContentDescription"/>
+
+            <!--<ImageView
+                android:id="@+id/collapsed_send_button"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/baseline_eject_black_36"
+                android:background="#ffffff"
+                tools:ignore="ContentDescription"/>-->
+
+
+        </LinearLayout>
+
+        <!--View while view is expanded-->
+        <LinearLayout
+            android:id="@+id/expanded_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F8BBD0"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:padding="8dp">
+
+            <!--Album image for the song currently playing.-->
+            <ImageView
+                android:id="@+id/imageViewicon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:padding="2dp"
+                tools:ignore="ContentDescription"/>
+
+            <!--Previous button
+            <ImageView
+                android:id="@+id/prev_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_previous"
+                tools:ignore="ContentDescription"/>
+
+            &lt;!&ndash;Play button&ndash;&gt;
+            <ImageView
+                android:id="@+id/play_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_play"
+                tools:ignore="ContentDescription"/>
+
+            &lt;!&ndash;Next button&ndash;&gt;
+            <ImageView
+                android:id="@+id/next_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_play_next"
+                tools:ignore="ContentDescription"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".7"
+                android:weightSum="3"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/close_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="ক্লোজ"
+                    />
+
+                <Button
+                    android:id="@+id/open_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="এডিট"
+
+                   />
+
+                <Button
+                    android:id="@+id/send_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="সেন্ড"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
